@@ -51,3 +51,38 @@ To run this notebook, you'll need the following libraries:
 
 ```bash
 pip install pandas scikit-learn
+
+
+
+Results
+The models were evaluated based on $R^2$, MAE, and MSE.
+
+Linear Regression:
+
+$R^2$: 0.6459
+MAE: 141278.72
+MSE: 48000217917.93
+Lasso Regression (alpha=1000000):
+
+$R^2$: 0.5302
+MAE: 166700.58
+MSE: 63689410060.78
+Ridge Regression (alpha=10000000):
+
+$R^2$: 0.5317
+MAE: 166678.70
+MSE: 63485602587.08
+Polynomial Regression (degree=3):
+
+$R^2$: 0.6926
+MAE: 126614.18
+MSE: 41664116024.39
+Polynomial Regression with Ridge (alpha=100000, degree=3):
+
+$R^2$: 0.7203
+MAE: 124013.29
+MSE: 37909866746.22
+Polynomial Regression with Ridge regularization demonstrated the best performance among the tested models, achieving the highest $R^2$ score and lowest MAE and MSE.
+
+Contributing
+Feel free to fork this repository, make improvements, and submit pull requests.
